@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE_NAME=lazyatom/rpi-motion
+IMAGE_NAME=collabnix/docker-cctv-raspbi
 VIDEO_DIRECTORY=`pwd`/videos
 
 mkdir -p $VIDEO_DIRECTORY
