@@ -155,6 +155,12 @@ docker build . -t collabnix/docker-cctv-raspbi
 
 ## Bringing up Docker Container
 
+Before you execute run.sh script, you will need the camera module driver by running the below script:
+
+```
+sudo modprobe bcm2835-v4l2
+```
+
 Run the below command to bring up Docker container
 
 ```
