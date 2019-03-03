@@ -1,5 +1,7 @@
 # Docker Image for Low-cost HD surveillance Camera Module on Raspberry Pi 3
 
+This runs a motion-detecting camera connected to a Raspberry Pi. The videos are saved into a folder on the host machine (i.e. outside of the Docker container), and can be streamed over the network too.
+
 ## Pre-requisite:
 
 ### Hardware
@@ -144,3 +146,20 @@ Server: Docker Engine - Community
   Experimental:     false
 root@raspberrypi:~#
 ```
+
+## Building CCTV Cam Docker Image
+
+```
+docker build . -t collabnix/docker-cctv-raspbi
+```
+
+## Bringing up Docker Container
+
+Run the below command to bring up Docker container
+
+```
+./run.sh
+```
+
+This will connect to a webcam via /dev/video0, create and mount the video directory in a directory called videos within the current cdirectory, and start running as a daemon.
+
