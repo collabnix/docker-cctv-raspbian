@@ -147,6 +147,20 @@ Server: Docker Engine - Community
 root@raspberrypi:~#
 ```
 
+## Enabling Camera Interfacing
+
+```
+raspi-config
+```
+
+Select Interfacing option to enable camera.
+
+## Load the Broadcom Module
+
+```
+sudo modprobe bcm2835-v4l2
+```
+
 ## Building CCTV Cam Docker Image
 
 ```
