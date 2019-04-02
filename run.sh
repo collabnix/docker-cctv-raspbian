@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE_NAME=collabnix/docker-cctv-raspbi
+IMAGE_NAME=collabnix/docker-cctv-raspbian
 VIDEO_DIRECTORY=`pwd`/videos
 
 mkdir -p $VIDEO_DIRECTORY
