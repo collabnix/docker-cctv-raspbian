@@ -1,0 +1,13 @@
+docker-cctv:
+  build: .
+  environment:
+    - "AWS_ACCESS_KEY_ID=xyz"
+    - "AWS_SECRET_ACCESS_KEY=xyz"
+  privileged: true
+  ports:
+    - "8084:8081"
+  devices:
+    - "/dev/video0:/dev/video0"
+  volumes:
+    - `pwd`/videos:/mnt/motion
+  restart: always
