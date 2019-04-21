@@ -6,6 +6,7 @@ docker-cctv:
   devices:
     - "/dev/video0:/dev/video0"
   volumes:
-    - `pwd`/videos:/mnt/motion
+    - /home/pi/videos:/mnt/motion
   restart: always
+  
   
